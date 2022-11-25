@@ -24,7 +24,9 @@ namespace Exercise3_025
         {
             LAST = null;
         }
-
+        public void InsertNewNodeInCircular()
+        {
+        }
         public bool Search(int rollNo, ref Node previous, ref Node current) /*Searches for the specified node*/
         {
             for (previous = current = LAST.next; current != LAST; previous = current, current = current.next)
@@ -38,6 +40,10 @@ namespace Exercise3_025
             else
                 return (false); /*return false if the node is not found*/
         }
+        public void DeleteNodeInCircular()
+        {
+        }
+
         public bool listEmpty()
         {
             if (LAST == null) /*if the node has reached the end and the data is declared null 
