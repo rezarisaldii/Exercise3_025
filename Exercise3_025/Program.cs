@@ -17,6 +17,13 @@ namespace Exercise3_025
     //create class for Circularlist
     class Circularlist
     {
+        // Initialize the Nodes.
+        Node LAST;
+
+        public Circularlist()
+        {
+
+        }
 
     }
     internal class Program
