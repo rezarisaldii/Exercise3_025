@@ -46,6 +46,13 @@ namespace Exercise3_025
             else
                 return false;
         }
+
+        public void traverse() /*Traverse all the nodes of the list*/
+        {
+            if (listEmpty())
+                Console.WriteLine("\nList is empty");
+           
+        }
     }
     internal class Program
     {
