@@ -14,22 +14,22 @@ namespace Exercise3_025
         public string name;
         public Node next;
     }
-    //create class for Circularlist
-    class Circularlist
+    //create class for CircularList
+    class CircularList
     {
         // Initialize the Nodes.
         Node LAST;
 
-        public Circularlist()
+        public CircularList()
         {
             LAST = null;
         }
 
         public bool Search(int rollNo, ref Node previous, ref Node current) /*Searches for the specified node*/
         {
-            for(previous = current = LAST.next; current != LAST; previous = current, current = current.next)
+            for (previous = current = LAST.next; current != LAST; previous = current, current = current.next)
             {
-                if(rollNo == current.rollNumber)
+                if (rollNo == current.rollNumber)
                     return (true); /*return true if the node is found*/
 
             }
@@ -71,11 +71,9 @@ namespace Exercise3_025
             else
                 Console.WriteLine("\nThe first record in the list is:\n\n " + LAST.next.rollNumber + "       " + LAST.next.name);
         }
-    }
-    internal class Program
-    {
         static void Main(string[] args)
         {
+            CircularList obj = new CircularList();
         }
     }
 }
