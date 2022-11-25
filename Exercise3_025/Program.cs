@@ -38,6 +38,14 @@ namespace Exercise3_025
             else
                 return (false); /*return false if the node is not found*/
         }
+        public bool listEmpty()
+        {
+            if (LAST == null) /*if the node has reached the end and the data is declared null 
+                               * then the node will return to the initial data*/
+                return true;
+            else
+                return false;
+        }
     }
     internal class Program
     {
