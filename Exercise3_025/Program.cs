@@ -14,6 +14,11 @@ namespace Exercise3_025
         public string name;
         public Node next;
     }
+    //create class for Circularlist
+    class Circularlist
+    {
+
+    }
     internal class Program
     {
         static void Main(string[] args)
